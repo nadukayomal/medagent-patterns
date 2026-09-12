@@ -1,0 +1,59 @@
+# Main configuration – edit here without changing code
+# Required in .env: OPENROUTER_API_KEY (if provider: openrouter) or OPENAI_API_KEY (if openai)
+
+provider:
+  default: openrouter   # openrouter | openai
+  tier: general        # general | strong | reason
+  openrouter_base_url: https://openrouter.ai/api/v1
+
+llm:
+  temperature: 0.2
+  max_tokens: 512
+  streaming: false
+  parallel_workers: 3
+
+embedding:
+  tier: default   # default | small
+  batch_size: 100
+
+chunking:
+  chunk_size: 800
+  chunk_overlap: 100
+
+retrieval:
+  top_k: 4
+  similarity_threshold: 0.7
+
+rag:
+  cache_path: "./store"
+  collection_name: "medical_knowledge"
+  score_threshold: 0.18
+  embed_provider: openai
+  embed_model: text-embedding-3-small
+
+web:
+  provider: tavily
+  max_results: 5
+  prefer_domains: [".lk", ".gov", ".org"]
+  freshness_days: 120
+  search_depth: "advanced"
+
+output:
+  timezone: "Asia/Colombo"
+  disclaimer: "This is educational information; verify with the hospital / consult your clinician."
+  include_sources: true
+  max_output_tokens: 512
+
+paths:
+  data_dir: data
+  docs_directory: "./data/medical_guides"
+  bookings_file: "./data/bookings.json"
+  vector_dir: data/vectorstore
+  cache_dir: "./store"
+  logs_dir: logs
+
+logging:
+  enabled: true
+  level: INFO
+  log_tokens: true
+  log_latency: true

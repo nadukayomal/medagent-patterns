@@ -1,0 +1,26 @@
+# Core LLM and Embedding
+openai>=1.12.0
+tiktoken>=0.5.2
+
+# Vector store & document parsing
+qdrant-client>=1.7.0
+pypdf>=4.0.0
+python-docx>=1.0.0
+
+# Web Search Tool
+tavily-python>=0.3.0
+
+# Configuration
+python-dotenv>=1.0.0
+PyYAML>=6.0.1
+
+# Jupyter Notebooks
+jupyter>=1.0.0
+notebook>=7.0.0
+ipykernel>=6.29.0
+
+# Optional: Development Tools
+black>=24.0.0
+flake8>=7.0.0
+mypy>=1.8.0
+pytest>=8.0.0
