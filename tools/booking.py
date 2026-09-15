@@ -111,7 +111,6 @@ class BookingLookupTool:
         if not bookings:
             return []
 
-        # Complex Logic Explanation:
         # String matching can be highly volatile due to case sensitivity and accidental whitespaces.
         # This helper function strictly normalizes all inputs to lowercase and strips whitespace 
         # to ensure that queries like " John Doe " match records like "john doe".
@@ -147,7 +146,6 @@ class BookingLookupTool:
                 matches.append(b)
                 continue
 
-        # Complex Logic Explanation:
         # Because we check multiple criteria independently, a single booking might be appended 
         # to the 'matches' list multiple times (e.g., if both the name AND email match).
         # We use a set ('seen') to track the unique 'booking_id's and filter out any duplicates 
