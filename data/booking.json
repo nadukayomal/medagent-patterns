@@ -1,0 +1,170 @@
+{
+  "patient_bookings": [
+    {
+      "booking_id": "APT001",
+      "patient_name": "John Silva",
+      "patient_phone": "+94771234567",
+      "patient_email": "john.silva@email.com",
+      "doctor": "Dr. Nimal Perera",
+      "specialty": "General Practice",
+      "reason": "Annual health checkup",
+      "date": "2026-02-10",
+      "time": "10:00 AM",
+      "hospital": "City General Hospital",
+      "location": "Building A, 2nd Floor",
+      "status": "confirmed",
+      "notes": "Fasting blood test included"
+    },
+    {
+      "booking_id": "APT002",
+      "patient_name": "Mary Fernando",
+      "patient_phone": "+94777654321",
+      "patient_email": "mary.f@email.com",
+      "doctor": "Dr. Sunil Silva",
+      "specialty": "General Practice",
+      "reason": "Follow-up for fever and cough",
+      "date": "2026-02-12",
+      "time": "2:30 PM",
+      "hospital": "Central Medical Clinic",
+      "location": "Ground Floor, Room 5",
+      "status": "confirmed",
+      "notes": "Bring previous test results"
+    },
+    {
+      "booking_id": "APT003",
+      "patient_name": "Saman Kumara",
+      "patient_phone": "+94772345678",
+      "patient_email": "saman.k@email.com",
+      "doctor": "Dr. Anura Jayasinghe",
+      "specialty": "General Practice",
+      "reason": "Vaccination - flu shot",
+      "date": "2026-02-15",
+      "time": "9:00 AM",
+      "hospital": "Colombo Health Center",
+      "location": "Vaccination Clinic, 1st Floor",
+      "status": "confirmed",
+      "notes": "Wait 15 minutes after vaccination"
+    },
+    {
+      "booking_id": "APT004",
+      "patient_name": "Kamala Wijesinghe",
+      "patient_phone": "+94778901234",
+      "patient_email": "kamala.w@email.com",
+      "doctor": "Dr. Nimal Perera",
+      "specialty": "General Practice",
+      "reason": "Blood pressure monitoring",
+      "date": "2026-02-17",
+      "time": "11:30 AM",
+      "hospital": "City General Hospital",
+      "location": "Building A, 2nd Floor",
+      "status": "confirmed",
+      "notes": "Bring home blood pressure readings"
+    },
+    {
+      "booking_id": "APT005",
+      "patient_name": "John Silva",
+      "patient_phone": "+94771234567",
+      "patient_email": "john.silva@email.com",
+      "doctor": "Dr. Priya Mendis",
+      "specialty": "General Practice",
+      "reason": "Skin rash consultation",
+      "date": "2026-02-20",
+      "time": "3:00 PM",
+      "hospital": "Wellness Medical Center",
+      "location": "Consultation Room 3",
+      "status": "confirmed",
+      "notes": "Avoid applying any creams before appointment"
+    }
+  ],
+  
+  "doctor_schedules": [
+    {
+      "doctor": "Dr. Nimal Perera",
+      "specialty": "General Practice",
+      "hospital": "City General Hospital",
+      "location": "Building A, 2nd Floor",
+      "available_days": ["Monday", "Wednesday", "Friday"],
+      "available_times": ["9:00 AM - 12:00 PM", "2:00 PM - 5:00 PM"],
+      "consultation_fee": "Rs. 2,500",
+      "accepts_walk_ins": false,
+      "booking_required": true,
+      "languages": ["English", "Sinhala", "Tamil"]
+    },
+    {
+      "doctor": "Dr. Sunil Silva",
+      "specialty": "General Practice",
+      "hospital": "Central Medical Clinic",
+      "location": "Ground Floor",
+      "available_days": ["Tuesday", "Thursday", "Saturday"],
+      "available_times": ["10:00 AM - 1:00 PM", "3:00 PM - 6:00 PM"],
+      "consultation_fee": "Rs. 2,000",
+      "accepts_walk_ins": true,
+      "booking_required": false,
+      "languages": ["English", "Sinhala"]
+    },
+    {
+      "doctor": "Dr. Anura Jayasinghe",
+      "specialty": "General Practice",
+      "hospital": "Colombo Health Center",
+      "location": "1st Floor, Rooms 101-103",
+      "available_days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "available_times": ["8:00 AM - 11:00 AM"],
+      "consultation_fee": "Rs. 1,500",
+      "accepts_walk_ins": true,
+      "booking_required": false,
+      "languages": ["English", "Sinhala", "Tamil"]
+    },
+    {
+      "doctor": "Dr. Priya Mendis",
+      "specialty": "General Practice",
+      "hospital": "Wellness Medical Center",
+      "location": "Consultation Wing",
+      "available_days": ["Monday", "Wednesday", "Thursday", "Saturday"],
+      "available_times": ["1:00 PM - 5:00 PM"],
+      "consultation_fee": "Rs. 3,000",
+      "accepts_walk_ins": false,
+      "booking_required": true,
+      "languages": ["English", "Sinhala"]
+    }
+  ],
+  
+  "hospital_info": [
+    {
+      "name": "City General Hospital",
+      "address": "123 Main Street, Colombo 07",
+      "phone": "+94112345678",
+      "emergency_hotline": "+94112345679",
+      "email": "info@cityhospital.lk",
+      "opd_hours": "Monday-Friday: 8:00 AM - 5:00 PM, Saturday: 8:00 AM - 1:00 PM",
+      "emergency_24_7": true,
+      "services": ["General Practice", "Laboratory", "X-Ray", "Pharmacy", "Emergency Care"]
+    },
+    {
+      "name": "Central Medical Clinic",
+      "address": "45 Station Road, Colombo 03",
+      "phone": "+94112987654",
+      "email": "contact@centralclinic.lk",
+      "opd_hours": "Monday-Saturday: 9:00 AM - 7:00 PM, Sunday: Closed",
+      "emergency_24_7": false,
+      "services": ["General Practice", "Laboratory", "Pharmacy", "Vaccination"]
+    },
+    {
+      "name": "Colombo Health Center",
+      "address": "78 Galle Road, Colombo 04",
+      "phone": "+94117654321",
+      "email": "info@colombohealth.lk",
+      "opd_hours": "Monday-Saturday: 7:00 AM - 2:00 PM, Sunday: Closed",
+      "emergency_24_7": false,
+      "services": ["General Practice", "Vaccination", "Basic Laboratory", "Health Checkups"]
+    },
+    {
+      "name": "Wellness Medical Center",
+      "address": "92 Duplication Road, Colombo 05",
+      "phone": "+94118765432",
+      "email": "wellness@wmc.lk",
+      "opd_hours": "Monday-Saturday: 10:00 AM - 8:00 PM, Sunday: 10:00 AM - 2:00 PM",
+      "emergency_24_7": false,
+      "services": ["General Practice", "Preventive Care", "Health Screenings", "Consultation"]
+    }
+  ]
+}
