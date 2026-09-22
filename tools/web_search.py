@@ -171,7 +171,7 @@ class WebSearchTool:
         
         return scored_results
         
-    def format_result(
+    def format_results(
                         self, 
                         search_response: Dict[str, Any], 
                         include_urls: bool = True) -> str:
