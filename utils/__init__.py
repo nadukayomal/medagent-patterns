@@ -30,6 +30,8 @@ from .llm_utils import (
     OpenAIProvider,
     OpenRouterProvider,
     ToolRegistry,
+    LLM,
+    create_llm_provider,
 )
 
 # Define what gets imported when someone uses `from utils import *`
@@ -46,4 +48,6 @@ __all__ = [
     "OpenAIProvider",
     "OpenRouterProvider",
     "ToolRegistry",
+    "LLM",
+    "create_llm_provider",
 ]

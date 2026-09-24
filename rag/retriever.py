@@ -74,7 +74,8 @@ class MedicalKnowladgeRetriever:
         qdrant_path = self.store_path / "qdrant"
         qdrant_path.mkdir(parents=True, exist_ok=True)
         self._client = _get_qdrant_client(qdrant_path)
-        self.is_indexed = False
+        # self._is_indexed = False
+        self._is_indexed = self._client.count(self.collection_name).count > 0
         self._ensure_collection()
 
 
