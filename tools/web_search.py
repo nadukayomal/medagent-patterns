@@ -166,7 +166,7 @@ class WebSearchTool:
                 "published_date": result.get("published_date", "")
             })
 
-         # Sort by score (descending)
+        # Sort by score (descending)
         scored_results.sort(key=lambda x: x["score"], reverse=True)
         
         return scored_results
